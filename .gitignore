@@ -1,0 +1,89 @@
+# =======================================
+# TaskFlow Pro X - Git Ignore
+# Flutter + Node.js Backend
+# =======================================
+
+# ---------------------------------------
+# Environment variables / Secrets
+# ---------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------
+# Node.js
+# ---------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------
+# Flutter / Dart
+# ---------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# Flutter generated files
+**/doc/api/
+**/ios/Flutter/.last_build_id
+
+# ---------------------------------------
+# Dart / Flutter generated files
+# ---------------------------------------
+*.class
+*.log
+*.pyc
+*.swp
+
+# ---------------------------------------
+# Flutter build / symbol files
+# ---------------------------------------
+app.*.symbols
+app.*.map.json
+
+# ---------------------------------------
+# Android
+# ---------------------------------------
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+
+# ---------------------------------------
+# Android Studio / IntelliJ
+# ---------------------------------------
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# ---------------------------------------
+# VS Code
+# ---------------------------------------
+.vscode/
+
+# ---------------------------------------
+# macOS
+# ---------------------------------------
+.DS_Store
+
+# ---------------------------------------
+# Atom
+# ---------------------------------------
+.atom/
+
+# ---------------------------------------
+# Build / IDE / temporary files
+# ---------------------------------------
+.build/
+.buildlog/
+.history/
+.svn/
+.swiftpm/
+migrate_working_dir/
