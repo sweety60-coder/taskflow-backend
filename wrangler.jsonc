@@ -1,7 +1,28 @@
 {
-"$schema": "node_modules/wrangler/config-schema.json",
-"name": "taskflow-backend",
-"main": "worker.js",
-"compatibility_date": "2026-10-12",
-"compatibility_flags": ["nodejs_compat"]
+  "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
+  "name": "taskflow-api",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-12",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "taskflow-db",
+      "database_id": "a9679bb9-88e8-4693-a481-dc2058444af2"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "AUTH_LIMITER",
+      "namespace_id": "975315",
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    }
+  ],
+  "vars": {
+    "FIREBASE_PROJECT_ID": "taskflow-pro-x-11703",
+    "RESEND_FROM_EMAIL": "onboarding@resend.dev"
+  }
 }
