@@ -24,5 +24,27 @@
   "vars": {
     "FIREBASE_PROJECT_ID": "taskflow-pro-x-11703",
     "RESEND_FROM_EMAIL": "onboarding@resend.dev"
+  },
+  "previews": {
+    "d1_databases": [
+      {
+        "binding": "DB",
+        "database_id": "fa9a16d8-05e0-4387-b5e5-d064f794d793"
+      }
+    ],
+    "ratelimits": [
+      {
+        "name": "AUTH_LIMITER",
+        "namespace_id": "975316",
+        "simple": {
+          "limit": 10,
+          "period": 60
+        }
+      }
+    ],
+    "vars": {
+      "FIREBASE_PROJECT_ID": "taskflow-x-preview",
+      "RESEND_FROM_EMAIL": "onboarding@resend.dev"
+    }
   }
 }
